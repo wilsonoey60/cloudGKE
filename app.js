@@ -7,7 +7,7 @@ const HOST = '0.0.0.0'
 
 const app = express()
 
-app.use(express.static(__dirname + '/WebProfile.html'));
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/WebProfile.html')

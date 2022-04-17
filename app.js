@@ -10,11 +10,7 @@ const app = express()
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/WebProfile.html')
-    res.sendFile(__dirname + '/FotoProfil.png')
-    res.sendFile(__dirname + '/GithubPictures.png')
-    res.sendFile(__dirname + '/InstagramPictures.png')
-    res.sendFile(__dirname + '/LinkedinPictures.png')
+    res.sendFile('public')
 })
 
 app.listen(PORT, HOST)

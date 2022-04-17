@@ -10,7 +10,7 @@ const app = express()
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile('public')
+    res.sendFile(__dirname + '/WebProfile.html')
 })
 
 app.listen(PORT, HOST)

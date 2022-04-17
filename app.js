@@ -7,7 +7,7 @@ const HOST = '0.0.0.0'
 
 const app = express()
 app.get('/', (req, res) => {
-    res.sendFile('/WebProfile.html')
+    res.sendFile('./WebProfile.html')
 })
 
 app.listen(PORT, HOST)
